@@ -196,13 +196,11 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-menu {
+.nav-menu.list {
   margin-left: 93px;
 
-  @media screen and (max-width=767px) {
-    .nav-menu {
-      display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -259,8 +257,11 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-menu {
+.contacts-menu.list {
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .contacts-menu .contact {
@@ -364,6 +365,12 @@ img {
   width: 428px;
   padding: 0 15px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1158px) {
+    width: 1158px;
+  }
 }
 
 .partners.list {
