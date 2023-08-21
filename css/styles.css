@@ -344,6 +344,10 @@ img {
     padding-top: 112px;
     margin-bottom: 96px;
   }
+  @media screen and (max-width: 767px) {
+    width: 428px;
+    height: 432px;
+  }
 }
 
 .container-hero {
@@ -362,6 +366,9 @@ img {
   line-height: 1.07;
   letter-spacing: 0.04em;
   margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    font-size: 36px;
+  }
 }
 
 .section {
