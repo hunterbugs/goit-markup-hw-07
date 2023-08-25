@@ -257,22 +257,21 @@ img {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-@media screen and (min-width:768px){
-  font-size: 12px; 
-}
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
 
-@media screen and (min-width:1158px){
-  font-size: 16px;
-}
+  @media screen and (min-width: 1158px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-menu-list {
-
   display: none;
   list-style: none;
 
   @media screen and (min-width: 768px) {
-    display: block; 
+    display: block;
     margin-left: auto;
   }
   @media screen and (min-width: 1158px) {
@@ -283,11 +282,10 @@ img {
 }
 
 .contacts-menu-list .item-contact:nth-child(1) {
-  @media screen and (min-width:768px){
-        margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
   }
-    
-} 
+}
 
 .button {
   border-color: transparent;
@@ -339,7 +337,7 @@ img {
   width: 428px;
   height: 432px;
   text-align: center;
-  margin-right:auto;
+  margin-right: auto;
   margin-left: auto;
   margin-bottom: 96px;
   background-color: var(--navyblue);
@@ -351,11 +349,11 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 436px;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: auto;
     margin-bottom: 96px;
   }
@@ -363,31 +361,30 @@ img {
   @media screen and (min-width: 1158px) {
     width: 1158px;
     height: 600px;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: auto;
     margin-bottom: 120xp;
-    
-  } 
+  }
 }
 
 .container-hero {
-   display: block;  
+  display: block;
   justify-content: center;
   align-items: center;
   padding-top: 112px;
   width: 428px;
   height: 432px;
-  
-   @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 768px) {
     padding-top: 112px;
     width: 768px;
-     display: block; 
+    display: block;
     justify-content: center;
     align-items: center;
-  } 
-  @media screen and (min-width:1158px){
-     width: 1158px;
-     padding-top: 188px;
+  }
+  @media screen and (min-width: 1158px) {
+    width: 1158px;
+    padding-top: 188px;
   }
 }
 
@@ -404,7 +401,6 @@ img {
 }
 
 .section {
-
   /* padding: 94px 0px; */
   margin-bottom: 72px;
 
@@ -412,10 +408,9 @@ img {
     margin-bottom: 96px;
   }
 
-  @media screen and (min-width: 1158px){
-  margin-bottom: 120px;
+  @media screen and (min-width: 1158px) {
+    margin-bottom: 120px;
   }
-
 }
 
 .section.no-top-padding {
@@ -437,27 +432,30 @@ img {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-  } 
+  }
 }
 
 .container.menu {
   height: 70px;
   @media screen and (min-width: 768px) {
-      height: 72px;
+    height: 72px;
   }
-} 
+}
 
 .partners.list {
   display: flex;
-  /* justify-content: space-evenly; */
   flex-wrap: wrap;
   gap: 16px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 45px) / 3);
+  }
 }
 
 .partners.list > li {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 168px;
   height: 88px;
 }
@@ -488,19 +486,17 @@ img {
 }
 
 .nav-menu.list {
-
   display: none;
-  
+
   @media screen and (min-width: 768px) {
     display: flex;
-  margin-left: 93px;
+    margin-left: 93px;
 
-  align-items: center;
-  gap: 15px;
+    align-items: center;
+    gap: 15px;
   }
 
   @media screen and (min-width: 1158px) {
-    
   }
 }
 
@@ -510,9 +506,10 @@ img {
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 1.4;
-  margin: 0 auto;
-  @media screen and (min-width:768px){
+  text-align: center;
+  @media screen and (min-width: 768px) {
     margin: 0;
+    text-align: left;
   }
 }
 
@@ -523,13 +520,12 @@ img {
   line-height: 1.71;
 }
 
-
 .benefits.list {
   display: flex;
   flex-wrap: wrap;
- 
+
   width: 100%;
- 
+
   @media screen and (min-width: 768px) {
     margin-top: 96px;
     margin-bottom: 96px;
@@ -540,21 +536,20 @@ img {
   /* display: flex;
  
   flex-wrap: wrap;  */
- 
+
   width: 100%;
   margin-bottom: 72px;
-   
+
   @media screen and (min-width: 768px) {
-    
     width: calc((100% - 30px) / 2);
   }
 }
 
-.benefits-item .description > br{
-   display: none;
-   @media screen and (min-width:768px){
+.benefits-item .description > br {
+  display: none;
+  @media screen and (min-width: 768px) {
     display: inline;
-   }
+  }
 }
 
 .benefits-item-icon {
