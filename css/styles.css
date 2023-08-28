@@ -17,6 +17,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--slate);
   background-color: var(--white);
+  margin: 0;
 }
 
 h1,
@@ -57,6 +58,9 @@ img {
 
 .page-header {
   border-bottom: 1px solid var(--cornflower);
+  @media screen and (max-width: 321px) {
+    width: 100wh;
+  }
 }
 
 .page {
@@ -273,6 +277,7 @@ img {
   padding: 112px 54px;
   /* width: 428px;
   height: 432px; */
+  /* width: 100%; */
 
   @media screen and (min-width: 768px) {
     padding-top: 112px;
@@ -1466,6 +1471,10 @@ img {
 
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 321) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
