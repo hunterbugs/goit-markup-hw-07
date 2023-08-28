@@ -305,7 +305,7 @@ img {
 }
 
 .container {
-  width: 428px;
+  /* width: 428px; */
 
   padding: 0 15px;
   margin: 0 auto;
@@ -366,6 +366,9 @@ img {
     justify-content: center;
     column-gap: 24px;
     row-gap: 0;
+  }
+  @media screen and (max-width: 320px) {
+    width: 100vw;
   }
 }
 
@@ -443,6 +446,9 @@ img {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+  }
+  @media screen and (max-midth: 320px) {
+    width: 100%;
   }
 }
 
