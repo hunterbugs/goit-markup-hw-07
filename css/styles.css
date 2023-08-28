@@ -321,6 +321,10 @@ img {
 
 .container.menu {
   height: 70px;
+  @media screen and (max-width: 320px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: 768px) {
     height: 72px;
   }
