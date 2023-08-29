@@ -120,6 +120,9 @@ img {
   color: var(--navyblue);
 }
 
+.logo {
+  color: var(--iris);
+}
 .nav-menu .page {
   color: var(--navyblue);
   font-weight: 500;
@@ -174,21 +177,28 @@ img {
   list-style: none;
 
   @media screen and (min-width: 768px) {
-    display: block;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0 auto;
   }
   @media screen and (min-width: 1158px) {
-    padding-top: 10px;
+    padding: 0;
     display: flex;
+    flex-direction: row;
+
+    align-items: center;
     gap: 40px;
   }
 }
 
-.contacts-menu-list .item-contact:nth-child(1) {
+/* .contacts-menu-list .item-contact:nth-child(1) {
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
   }
-}
+} */
 
 .button {
   border-color: transparent;
@@ -258,14 +268,14 @@ img {
     height: 436px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 96px;
+    /* margin-bottom: 96px; */
   }
 
   @media screen and (min-width: 1158px) {
-    width: 1158px;
+    width: 100%;
     height: 600px;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
     margin-bottom: 120xp;
   }
 }
@@ -274,7 +284,7 @@ img {
   display: block;
   justify-content: center;
   align-items: center;
-  padding: 112px 54px;
+  padding: 112px 0px;
   /* width: 428px;
   height: 432px; */
   /* width: 100%; */
@@ -287,7 +297,7 @@ img {
     align-items: center;
   }
   @media screen and (min-width: 1158px) {
-    width: 1158px;
+    width: 100%;
     padding-top: 188px;
   }
 }
@@ -454,6 +464,7 @@ img {
 
 .section.no-top-padding {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .partners.list {
@@ -561,6 +572,8 @@ img {
 
 .team-members {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 64px 24px;
 
@@ -697,6 +710,13 @@ img {
 }
 .filters .space + .space {
   margin-left: 8px;
+}
+
+.substrate {
+  background-color: var(--white);
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .social-media-contact {
@@ -919,12 +939,13 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-right: 53px;
+  padding: 0;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    padding-right: 53px;
   }
 
   @media screen and (min-width: 1158px) {
