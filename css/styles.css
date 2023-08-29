@@ -58,7 +58,7 @@ img {
 
 .page-header {
   border-bottom: 1px solid var(--cornflower);
-  @media screen and (max-width: 321px) {
+  @media screen and (max-width: 320px) {
     width: 100wh;
   }
 }
@@ -555,11 +555,14 @@ img {
   text-align: center;
   margin-bottom: 72px;
 }
+.section-team {
+  background-color: var(--cloud);
+}
 
 .team-members {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 64px 24px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -583,8 +586,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 264px;
-  margin: 0 auto;
+  /* width: 264px;
+  margin: 0 auto; */
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 24px) / 2);
@@ -915,6 +918,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-right: 53px;
 
   @media screen and (min-width: 768px) {
     display: flex;
